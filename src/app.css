@@ -1,0 +1,37 @@
+:root {
+	/* COLOR VARS */
+	--lightest-grey: #F1F2F6;
+    --lighter-grey: #DADBDE;
+    --light-grey: #B3B5BC;
+    --primary-light: #77B1F9;
+    --primary-color: #2382F7;
+    --primary-dark: #074A9D;
+    --dark-grey: #636364;
+    --darker-grey: #333333;
+    --darkest-grey: #1A1A1A;
+
+	/* SPACING VARS */
+	--tiny-space: 5px;
+	--extra-small-space: 10px;
+	--small-space: 20px;
+	--medium-space: 50px;
+	--large-space: 80px;
+	--extra-large-space: 120px;
+}
+
+html {
+	font-family: "Space Mono", monospace;
+    background-color: var(--lightest-grey);
+}
+
+h6 {
+    font-size: 4em;
+	font-family: "EB Garamond", serif;
+    color: var(--darkest-color);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
