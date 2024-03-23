@@ -1,0 +1,21 @@
+{
+	"header": {
+		"logoFilePath": "/src/assets/logo.png",
+		"logoAltText": "Z Icon",
+		"logoText": "Zack Rogers | Full Stack Web Developer",
+		"externalLinks": [
+			{
+				"linkedin": "https://www.linkedin.com/in/zachary-rogers-dev/",
+				"github": "https://github.com/zackrogerst"
+			}
+		]
+	},
+	"hero": {
+		"headline": "Welcome to Zack OS",
+		"version": "Version 0.0.1"
+	},
+	"tabs": {
+		"tabsNavItems": ["home", "about", "work"],
+		"homeTab": ""
+	}
+}

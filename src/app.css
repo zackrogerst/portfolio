@@ -27,6 +27,7 @@ html {
 h6 {
     font-size: 4em;
 	font-family: "EB Garamond", serif;
+    font-weight: 400;
     color: var(--darkest-color);
 }
 

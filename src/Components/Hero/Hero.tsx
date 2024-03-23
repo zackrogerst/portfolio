@@ -1,12 +1,16 @@
-import Button from "../Utils/Button/Button";
-import "./hero.css"
+import "./hero.css";
+
+import content from "../../content.json";
 
 const Hero = () => {
+	const { headline, version } = content.hero;
 	return (
-		<>
-			<h6>Welcome to Zack OS</h6>
-			<Button text="hero button" />
-		</>
+		<div className="hero">
+			<div className="headline-container">
+				<h6>{headline}</h6>
+				<p>{version}</p>
+			</div>
+		</div>
 	);
 };
 

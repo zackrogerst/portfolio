@@ -1,3 +1,13 @@
 header {
     background-color: var(--lighter-grey);
+    padding: var(--tiny-space);
+}
+
+.logo-container{
+    display: flex;
+    gap: var(--extra-small-space);
+}
+
+.logo {
+    max-width: var(--medium-space);
 }
