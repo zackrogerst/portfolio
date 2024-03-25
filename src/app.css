@@ -1,14 +1,141 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
 	/* COLOR VARS */
-	--lightest-grey: #F1F2F6;
-    --lighter-grey: #DADBDE;
-    --light-grey: #B3B5BC;
-    --primary-light: #77B1F9;
-    --primary-color: #2382F7;
-    --primary-dark: #074A9D;
-    --dark-grey: #636364;
-    --darker-grey: #333333;
-    --darkest-grey: #1A1A1A;
+	--lightest-grey: #f1f2f6;
+	--lighter-grey: #dadbde;
+	--light-grey: #b3b5bc;
+	--primary-light: #77b1f9;
+	--primary-color: #2382f7;
+	--primary-dark: #074a9d;
+	--dark-grey: #636364;
+	--darker-grey: #333333;
+	--darkest-grey: #1a1a1a;
 
 	/* SPACING VARS */
 	--tiny-space: 5px;
@@ -19,20 +146,36 @@
 	--extra-large-space: 120px;
 }
 
+button {
+	color: var(--lightest-grey);
+	background-color: var(--primary-color);
+	border: none;
+	padding: var(--tiny-space);
+}
+
+button:hover {
+	background-color: var(--primary-dark);
+}
+
 html {
 	font-family: "Space Mono", monospace;
-    background-color: var(--lightest-grey);
+	background-color: var(--lightest-grey);
+}
+
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 h6 {
-    font-size: 4em;
+	font-size: 4em;
 	font-family: "EB Garamond", serif;
-    font-weight: 400;
-    color: var(--darkest-color);
+	font-weight: 400;
+	color: var(--darkest-color);
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }

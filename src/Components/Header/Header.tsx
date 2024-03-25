@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<header>
 			<div className="logo-container">
-				{logoFilePath && (
+				{logoFilePath !== "" && (
 					<img
 						className="logo"
 						src={logoFilePath}

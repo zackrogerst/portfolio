@@ -1,13 +1,19 @@
 header {
-    background-color: var(--lighter-grey);
-    padding: var(--tiny-space);
+	z-index: 999;
+	background-color: var(--lighter-grey);
+	padding: var(--tiny-space);
+	height: 4vh;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+    min-height: min-content;
 }
 
-.logo-container{
-    display: flex;
-    gap: var(--extra-small-space);
+.logo-container {
+	display: flex;
+	gap: var(--extra-small-space);
 }
 
 .logo {
-    max-width: var(--medium-space);
+	max-width: var(--medium-space);
 }
