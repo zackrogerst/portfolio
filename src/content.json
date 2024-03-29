@@ -1,7 +1,7 @@
 {
-	"header": {
+	"footer": {
 		"logoFilePath": "",
-		"logoAltText": "Z Icon",
+		"logoAltText": "",
 		"logoText": "Zack Rogers | Full Stack Web Developer",
 		"externalLinks": [
 			{
@@ -12,10 +12,58 @@
 	},
 	"hero": {
 		"headline": "Welcome to Zack OS",
-		"version": "Version 0.0.1"
+		"version": "Version 0.0.1",
+		"releaseNotes": [
+			{
+				"version": "0.0.1",
+				"description": "Zack OS published to the web."
+			}
+		]
 	},
-	"tabs": {
-		"tabsNavItems": ["home", "about", "work"],
-		"homeTab": ""
+	"about": {
+		"name": "Zack Rogers",
+		"location": "Salt Lake City, Utah",
+		"occupation": "Full Stack Web Developer",
+		"bio": "Welcome to my personal portfolio website. My name is Zack Rogers, I've been a software developer since 2022 and prior to that I was a web designer. I love learning new things whether related to software, my hobbies, or just fun facts.",
+		"hobbies": [
+			"Photography",
+			"Riding & Customizing Motorcycles",
+			"Building Legos",
+			"Weight Lifting",
+			"Collecting Old Furniture and Audio Equipment"
+		]
+	},
+	"experience": {
+		"technologies": [
+			"Typescript",
+			"Javascript",
+			"Python",
+			"React",
+			"Vue",
+			"Node.js",
+			"Express.js",
+			"PostgreSQL",
+			"HTML5",
+			"CSS",
+			"EJS",
+			"Bash",
+			"Git",
+			"Github",
+			"Heroku",
+			"Bcrypt",
+			"Redux",
+			"axios",
+			"React Router",
+			"Sequelize",
+			"Figma",
+			"Adobe Photoshop",
+			"Adobe Illustrator",
+			"Wordpress",
+			"WPEngine",
+			"Cloudflare",
+			"Filezilla (SFTP)",
+			"GoDaddy"
+		],
+		"history": [{}]
 	}
 }

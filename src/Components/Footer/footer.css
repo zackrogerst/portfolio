@@ -1,12 +1,13 @@
-header {
-	z-index: 999;
+footer {
+	position: fixed;
+	bottom: 0;
 	background-color: var(--lighter-grey);
-	padding: var(--tiny-space);
-	height: 4vh;
+	padding: var(--extra-small-space);
 	display: flex;
 	justify-content: start;
 	align-items: center;
-    min-height: min-content;
+	min-height: min-content;
+	width: 100%;
 }
 
 .logo-container {

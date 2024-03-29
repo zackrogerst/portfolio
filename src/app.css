@@ -160,6 +160,7 @@ button:hover {
 html {
 	font-family: "Space Mono", monospace;
 	background-color: var(--lightest-grey);
+	overflow: hidden;
 }
 
 h3 {
