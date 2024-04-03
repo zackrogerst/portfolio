@@ -144,6 +144,10 @@ table {
 	--medium-space: 50px;
 	--large-space: 80px;
 	--extra-large-space: 120px;
+
+	/* BORDER VARS */
+	--thinnest-border: 1px solid var(--light-grey);
+	--border-radius: 8px;
 }
 
 button {
@@ -179,4 +183,13 @@ h6 {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+main {
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
