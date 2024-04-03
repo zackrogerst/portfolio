@@ -1,12 +1,10 @@
-.dialog-container {
-	position: fixed;
+.rnd-container {
+	padding: 2px;
 	border-radius: var(--border-radius);
 	border: var(--thinnest-border);
 	background-color: var(--lightest-grey);
 	min-width: min-content;
-	min-height: 300px;
 	overflow: hidden;
-	overflow-y: scroll;
 	box-shadow: 5px;
 	-webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
@@ -21,7 +19,6 @@
 	padding: var(--tiny-space) var(--small-space);
 	position: sticky;
 	top: 0;
-	left: 0;
 	background: repeating-linear-gradient(
 		135deg,
 		var(--light-grey),
@@ -40,15 +37,25 @@
 	border: var(--thinnest-border);
 	border-radius: var(--border-radius);
 }
-
-.cursor {
-	cursor: move;
-}
-
 .dialog-content {
 	display: flex;
 	align-items: start;
 	flex-direction: column;
 	gap: var(--small-space);
 	padding: var(--small-space);
+}
+
+.drag-handle {
+	cursor: move;
+}
+
+.resize-handle {
+	background: repeating-linear-gradient(
+		135deg,
+		var(--light-grey),
+		var(--light-grey) 1px,
+		transparent 0,
+		transparent 50%
+	);
+	background-size: 5px 5px;
 }

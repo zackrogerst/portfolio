@@ -11,10 +11,9 @@
 		"format": "npx prettier --write ."
 	},
 	"dependencies": {
-		"re-resizable": "^6.9.11",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-draggable": "^4.4.6"
+		"react-rnd": "^10.4.1"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.66",
