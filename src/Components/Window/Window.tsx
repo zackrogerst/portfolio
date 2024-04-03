@@ -1,25 +1,25 @@
 import { ReactNode, FC, useState, useEffect } from "react";
 import { Rnd } from "react-rnd";
 
-import "./dialog.css";
+import "./window.css";
 
-interface DialogProps {
+interface WindowProps {
 	headerText: string;
 	zIndex: number;
 	children?: ReactNode;
 }
 
-const Dialog: FC<DialogProps> = ({ headerText, zIndex, children }) => {
-	const [windowSize, setWindowSize] = useState({
+const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
+	const [browserWindowSize, setBrowserWindowSize] = useState({
 		width: window.innerWidth,
 		height: window.innerHeight
 	});
 
 	const [defaultPositioning, setDefaultPositioning] = useState({
-		w: windowSize.width / 4,
+		w: browserWindowSize.width / 4,
 		h: "auto",
-		x: windowSize.width / 2 - windowSize.width / 8, // 8 to center horizontal
-		y: windowSize.height / 2 - windowSize.height / 3
+		x: browserWindowSize.width / 2 - browserWindowSize.width / 8, // 8 to center horizontal
+		y: browserWindowSize.height / 2 - browserWindowSize.height / 3
 	});
 
 	const handleClasses = {
@@ -36,15 +36,15 @@ const Dialog: FC<DialogProps> = ({ headerText, zIndex, children }) => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			setWindowSize({
+			setBrowserWindowSize({
 				width: window.innerWidth,
 				height: window.innerHeight
 			});
 			setDefaultPositioning({
-				w: windowSize.width / 4,
+				w: browserWindowSize.width / 4,
 				h: "auto",
-				x: windowSize.width / 2 - windowSize.width / 2 / 2 / 2,
-				y: windowSize.height / 2 - windowSize.height / 2 / 2
+				x: browserWindowSize.width / 2 - browserWindowSize.width / 2 / 2 / 2,
+				y: browserWindowSize.height / 2 - browserWindowSize.height / 2 / 2
 			});
 		};
 
@@ -72,14 +72,14 @@ const Dialog: FC<DialogProps> = ({ headerText, zIndex, children }) => {
 					scrollbarGutter: "stable"
 				}}
 			>
-				<div className="drag-handle dialog-header" style={{ zIndex: zIndex }}>
+				<div className="drag-handle window-header" style={{ zIndex: zIndex }}>
 					<h3>{headerText}</h3>
 				</div>
 
-				<div className="dialog-content">{children}</div>
+				<div className="window-content">{children}</div>
 			</div>
 		</Rnd>
 	);
 };
 
-export default Dialog;
+export default Window;

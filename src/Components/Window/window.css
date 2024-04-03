@@ -11,7 +11,7 @@
 	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.dialog-header {
+.window-header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,13 +31,13 @@
 	text-wrap: nowrap;
 }
 
-.dialog-header h3 {
+.window-header h3 {
 	background-color: var(--lightest-grey);
 	padding: var(--tiny-space) var(--extra-small-space);
 	border: var(--thinnest-border);
 	border-radius: var(--border-radius);
 }
-.dialog-content {
+.window-content {
 	display: flex;
 	align-items: start;
 	flex-direction: column;

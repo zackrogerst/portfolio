@@ -1,7 +1,7 @@
 import "./app.css";
 
 import Footer from "./Components/Footer/Footer";
-import Dialog from "./Components/Dialog/Dialog";
+import Window from "./Components/Window/Window";
 
 function App() {
 	return (
@@ -16,13 +16,13 @@ function App() {
 					overflow: "hidden"
 				}}
 			>
-				<Dialog headerText="Welcome To Zack OS" zIndex={1}>
+				<Window headerText="Welcome To Zack OS" zIndex={1}>
 					<p>
 						Hello, I'm Zack Rogers. I'm a Software Engineer based in Salt Lake City,
 						Utah who specializes in Full Stack Web Development.
 					</p>
 					<button>Learn More About Zack</button>
-				</Dialog>
+				</Window>
 			</main>
 			<Footer />
 		</>
