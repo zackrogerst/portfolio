@@ -72,8 +72,12 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 					scrollbarGutter: "stable"
 				}}
 			>
-				<div className="drag-handle window-header" style={{ zIndex: zIndex }}>
+				<div
+					className="drag-handle window-header striped-background"
+					style={{ zIndex: zIndex }}
+				>
 					<h3>{headerText}</h3>
+					<p className="close-icon">X</p>
 				</div>
 
 				<div className="window-content">{children}</div>
