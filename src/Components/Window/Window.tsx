@@ -5,12 +5,13 @@ import "./window.css";
 import WindowHeader from "./WindowHeader/WindowHeader";
 
 interface WindowProps {
+	closeIcons: boolean;
 	headerText: string;
 	zIndex: number;
 	children?: ReactNode;
 }
 
-const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
+const Window: FC<WindowProps> = ({ closeIcons, headerText, zIndex, children }) => {
 	const [browserWindowSize, setBrowserWindowSize] = useState({
 		width: window.innerWidth,
 		height: window.innerHeight
@@ -18,7 +19,7 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 
 	const [defaultPositioning, setDefaultPositioning] = useState({
 		w: browserWindowSize.width / 4,
-		h: "auto",
+		h: browserWindowSize.height / 2,
 		x: browserWindowSize.width / 2 - browserWindowSize.width / 8, // 8 to center horizontal
 		y: browserWindowSize.height / 2 - browserWindowSize.height / 3
 	});
@@ -43,7 +44,7 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 			});
 			setDefaultPositioning({
 				w: browserWindowSize.width / 4,
-				h: "auto",
+				h: browserWindowSize.height / 2,
 				x: browserWindowSize.width / 2 - browserWindowSize.width / 2 / 2 / 2,
 				y: browserWindowSize.height / 2 - browserWindowSize.height / 2 / 2
 			});
@@ -74,7 +75,7 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 					scrollbarGutter: "stable"
 				}}
 			>
-				<WindowHeader headerText={headerText} />
+				<WindowHeader closeIcons={closeIcons} headerText={headerText} />
 				<div className="window-content">{children}</div>
 			</div>
 		</Rnd>

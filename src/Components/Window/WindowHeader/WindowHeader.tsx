@@ -9,22 +9,27 @@ import ForwardArrowIcon from "../../Utils/Icons/ForwardArrowIcon";
 import VerticalLine from "../../Utils/Icons/VerticalLine";
 
 interface WindowHeaderProps {
+	closeIcons: boolean;
 	headerText: string;
 }
 
-const WindowHeader: React.FC<WindowHeaderProps> = ({ headerText }) => {
+const WindowHeader: React.FC<WindowHeaderProps> = ({ closeIcons, headerText }) => {
 	return (
 		<div className="drag-handle window-header">
 			<div className="window-header-column">
-				<div className="header-icons-container">
-					<CloseIcon />
-					<MinimizeIcon />
-				</div>
-				<VerticalLine />
-				<div className="header-icons-container wider-gap">
-					<BackArrowIcon iconColor={"var(--dark-grey)"} />
-					<ForwardArrowIcon iconColor={"var(--light-grey)"} />
-				</div>
+				{closeIcons && (
+					<>
+						<div className="header-icons-container">
+							<CloseIcon />
+							<MinimizeIcon />
+						</div>
+						<VerticalLine />
+						<div className="header-icons-container wider-gap">
+							<BackArrowIcon iconColor={"var(--dark-grey)"} />
+							<ForwardArrowIcon iconColor={"var(--light-grey)"} />
+						</div>
+					</>
+				)}
 				<h3>{headerText}</h3>
 			</div>
 		</div>

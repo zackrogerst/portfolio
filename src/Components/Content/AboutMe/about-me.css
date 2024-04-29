@@ -1,0 +1,20 @@
+.professional-experience-card {
+	padding: var(--small-space);
+	/* background-color: var(--lighter-grey); */
+	border: var(--thinnest-border);
+	border-radius: var(--border-radius);
+	width: 100%;
+	max-width: max-content;
+}
+.card-container {
+	padding: var(--small-space) 0;
+	display: flex;
+	gap: var(--small-space);
+	flex-wrap: wrap;
+}
+
+hr {
+	margin: var(--small-space) 0;
+	border: none;
+	border-top: var(--thinnest-border);
+}

@@ -1,38 +1,10 @@
 import "./app.css";
+import AboutMe from "./Components/Content/AboutMe/AboutMe.tsx";
 
 import Footer from "./Components/Footer/Footer";
 import Window from "./Components/Window/Window";
 
-// interface WindowsContentTypes {
-// 	key: number;
-// 	headerText: string;
-// 	htmlElms: HtmlElement[];
-// }
-
-// interface HtmlElement {
-// 	tag: string;
-// 	text: string;
-// 	link?: string;
-// }
-
 function App() {
-	// const windowsContent: Array<WindowsContentTypes> = [
-	// 	{
-	// 		key: 1,
-	// 		headerText: "Welcome To Zack OS",
-	// 		htmlElms: [
-	// 			{
-	// 				tag: "p",
-	// 				text: "Hello, I'm Zack Rogers. I'm a Software Engineer based in Salt Lake City, Utah who specializes in Full Stack Web Development."
-	// 			},
-	// 			{
-	// 				tag: "button",
-	// 				text: "Learn More About Zack",
-	// 				link: "/about"
-	// 			}
-	// 		]
-	// 	}
-	// ];
 	return (
 		<>
 			<main
@@ -48,16 +20,9 @@ function App() {
 				{/* Desktop Icons */}
 				{/* Desktop Icons */}
 
-				{/* Windows */}
-				<Window headerText="Welcome To Zack OS" zIndex={1}>
-					<h1>Full Stack Software Developer in Salt Lake City, Utah</h1>
-					<p>
-						Hello, I'm Zack Rogers. I'm a Software Developer based in Salt Lake City,
-						Utah who specializes in Full Stack Web Development.
-					</p>
-					<button>Learn More About Zack</button>
+				<Window closeIcons={false} headerText="Welcome To Zack Os" zIndex={1}>
+					<AboutMe />
 				</Window>
-				{/* Windows */}
 			</main>
 			<Footer />
 		</>

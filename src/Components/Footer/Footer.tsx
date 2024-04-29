@@ -1,6 +1,6 @@
 import "./footer.css";
 
-import content from "../../content.json";
+import content from "../../content.ts";
 
 const Footer = () => {
 	const { logoFilePath, logoAltText, logoText } = content.footer;
