@@ -1,5 +1,4 @@
 .rnd-container {
-	padding: 2px;
 	border-radius: var(--border-radius);
 	border: var(--thinnest-border);
 	background-color: var(--lightest-grey);
