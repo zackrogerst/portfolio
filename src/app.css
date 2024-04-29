@@ -130,12 +130,14 @@ table {
 	--lightest-grey: #f1f2f6;
 	--lighter-grey: #dadbde;
 	--light-grey: #b3b5bc;
-	--primary-light: #77b1f9;
-	--primary-color: #2382f7;
-	--primary-dark: #074a9d;
+	--blue-light: #77b1f9;
+	--blue-color: #2382f7;
+	--blue-dark: #074a9d;
 	--dark-grey: #636364;
 	--darker-grey: #333333;
 	--darkest-grey: #1a1a1a;
+	--red: #e44141;
+	--orange: #f79823;
 
 	/* SPACING VARS */
 	--tiny-space: 5px;
@@ -152,13 +154,13 @@ table {
 
 button {
 	color: var(--lightest-grey);
-	background-color: var(--primary-color);
+	background-color: var(--blue-color);
 	border: none;
 	padding: var(--tiny-space);
 }
 
 button:hover {
-	background-color: var(--primary-dark);
+	background-color: var(--blue-dark);
 }
 
 html {

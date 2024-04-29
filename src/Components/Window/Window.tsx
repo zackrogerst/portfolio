@@ -2,6 +2,7 @@ import { ReactNode, FC, useState, useEffect } from "react";
 import { Rnd } from "react-rnd";
 
 import "./window.css";
+import WindowHeader from "./WindowHeader/WindowHeader";
 
 interface WindowProps {
 	headerText: string;
@@ -72,14 +73,7 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 					scrollbarGutter: "stable"
 				}}
 			>
-				<div
-					className="drag-handle window-header striped-background"
-					style={{ zIndex: zIndex }}
-				>
-					<h3>{headerText}</h3>
-					<p className="close-icon">X</p>
-				</div>
-
+				<WindowHeader headerText={headerText} />
 				<div className="window-content">{children}</div>
 			</div>
 		</Rnd>

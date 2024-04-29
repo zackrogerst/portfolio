@@ -11,6 +11,7 @@ const Footer = () => {
 					<img className="logo" src={logoFilePath} alt={logoAltText ? logoAltText : ""} />
 				)}
 				{logoText && <p>{logoText}</p>}
+				{/* Toolbar Icons */}
 			</div>
 		</footer>
 	);
