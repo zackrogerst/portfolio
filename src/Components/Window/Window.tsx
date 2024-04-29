@@ -64,6 +64,7 @@ const Window: FC<WindowProps> = ({ headerText, zIndex, children }) => {
 			className="rnd-container"
 			default={defaultPositionSize}
 			minHeight={100}
+			zindex={zIndex}
 		>
 			<div
 				style={{

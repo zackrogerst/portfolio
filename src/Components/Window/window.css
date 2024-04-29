@@ -11,40 +11,6 @@
 	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.window-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: var(--tiny-space) var(--small-space);
-	position: sticky;
-	top: 0;
-	border-bottom: var(--thinnest-border);
-	text-wrap: nowrap;
-}
-
-.window-header h3,
-.close-icon,
-.header-icon {
-	background-color: var(--lightest-grey);
-	padding: var(--tiny-space) var(--extra-small-space);
-	border: var(--thinnest-border);
-	border-radius: var(--border-radius);
-}
-
-.window-header h3 {
-	justify-self: center;
-}
-
-.close-icon {
-	cursor: pointer;
-}
-
-.header-icon {
-	width: 1rem;
-	height: 1rem;
-}
-
 .window-content {
 	display: flex;
 	align-items: start;

@@ -1,0 +1,22 @@
+.window-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: var(--tiny-space) var(--small-space);
+	position: sticky;
+	top: 0;
+	border-bottom: var(--thinnest-border);
+	text-wrap: nowrap;
+}
+
+.header-icons-container {
+	display: flex;
+	gap: var(--extra-small-space);
+}
+
+.window-header-column {
+	display: flex;
+    align-items: center;
+    gap: var(--small-space);
+}
