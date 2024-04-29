@@ -17,6 +17,6 @@
 
 .window-header-column {
 	display: flex;
-    align-items: center;
-    gap: var(--small-space);
+	align-items: center;
+	gap: var(--small-space);
 }

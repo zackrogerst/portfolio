@@ -4,7 +4,7 @@ interface ForwardArrowIconProps {
 	iconColor: string;
 }
 
-const ForwardArrowIcon: FC<ForwardArrowIconProps> = ({iconColor}) => {
+const ForwardArrowIcon: FC<ForwardArrowIconProps> = ({ iconColor }) => {
 	return (
 		<svg
 			cursor={"pointer"}
