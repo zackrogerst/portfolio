@@ -184,6 +184,7 @@ li {
 }
 
 a {
+	cursor: pointer;
 	color: var(--blue-color);
 }
 
