@@ -14,12 +14,23 @@ const allWindowsHeadlines = [content.about.headline];
 
 function App() {
 	const [windows, setWindows] = useState([content.about.headline]);
+
+	function handleClickDesktopIcon(arr: string[], str: string) {
+		if (arr.includes(str)) {
+			// set clicked window to focused
+			const index = arr.indexOf(str);
+			arr.push(arr.splice(index, 1)[0]);
+			setWindows(arr);
+		} else {
+			setWindows((prev) => [...prev, str]);
+		}
+	}
 	return (
 		<WindowContext.Provider value={windows}>
 			<>
 				{allWindowsHeadlines.map((windowHeadline) => (
 					<a
-						onClick={() => setWindows((prev) => [...prev, windowHeadline])}
+						onClick={() => handleClickDesktopIcon(windows, windowHeadline)}
 						key={windowHeadline}
 					>
 						{windowHeadline}
@@ -34,7 +45,6 @@ function App() {
 							headerText={headline}
 							zIndex={index}
 						>
-							{headline === content.about.headline && <AboutMe />}
 							{headline === content.about.headline && <AboutMe />}
 						</Window>
 					))}
