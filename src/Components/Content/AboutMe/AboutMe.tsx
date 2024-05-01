@@ -18,7 +18,9 @@ const AboutMe = () => {
 				{links &&
 					links.map((link, index, array) => (
 						<p key={index} style={{ display: "inline" }}>
-							<a href={link.href}>{link.text}</a>
+							<a href={link.href} target="_blank">
+								{link.text}
+							</a>
 							{array[array.length - 1] !== link && " | "}
 						</p>
 					))}
