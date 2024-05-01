@@ -1,54 +1,3 @@
-export interface ContentProps {
-	footer: Footer;
-	about: About;
-}
-
-export interface About {
-	headline: string;
-	version: string;
-	releaseNotes: ReleaseNote[];
-	title: string;
-	name: string;
-	location: string;
-	occupation: string;
-	bio: string;
-	links: Link[];
-	professionalExperience: ProfessionalExperience[];
-	technologies: string[];
-}
-
-export interface Link {
-	text: string;
-	href: string;
-}
-
-export interface ProfessionalExperience {
-	position: Employer;
-	employer: Employer;
-}
-
-export interface Employer {
-	element: string;
-	content: string;
-}
-
-export interface ReleaseNote {
-	version: string;
-	description: string;
-}
-
-export interface Footer {
-	logoFilePath: string;
-	logoAltText: string;
-	logoText: string;
-	externalLinks: ExternalLink[];
-}
-
-export interface ExternalLink {
-	linkedin: string;
-	github: string;
-}
-
 const content = {
 	footer: {
 		logoFilePath: "",
@@ -87,64 +36,28 @@ const content = {
 		],
 		professionalExperience: [
 			{
-				position: {
-					element: "h4",
-					content: "SEO Fulfillment Specialist"
-				},
-				employer: {
-					element: "p",
-					content: "Boostability | 2015-2018"
-				}
+				position: "SEO Fulfillment Specialist",
+				employer: "Boostability | 2015-2018"
 			},
 			{
-				position: {
-					element: "h4",
-					content: "Photographer"
-				},
-				employer: {
-					element: "p",
-					content: "Royal Business Academy | 2016"
-				}
+				position: "Photographer",
+				employer: "Royal Business Academy | 2016"
 			},
 			{
-				position: {
-					element: "h4",
-					content: "Web Designer"
-				},
-				employer: {
-					element: "p",
-					content: "TTO Advisors | 2019"
-				}
+				position: "Web Designer",
+				employer: "TTO Advisors | 2019"
 			},
 			{
-				position: {
-					element: "h4",
-					content: "Web Designer"
-				},
-				employer: {
-					element: "p",
-					content: "Boostability | 2018-2022"
-				}
+				position: "Web Designer",
+				employer: "Boostability | 2018-2022"
 			},
 			{
-				position: {
-					element: "h4",
-					content: "Web Developer"
-				},
-				employer: {
-					element: "p",
-					content: "Boostability | 2022-2023"
-				}
+				position: "Web Developer",
+				employer: "Boostability | 2022-2023"
 			},
 			{
-				position: {
-					element: "h4",
-					content: "Full Stack Web Developer and Designer"
-				},
-				employer: {
-					element: "p",
-					content: "Bridgewoods | 2022 - current"
-				}
+				position: "Full Stack Web Developer and Designer",
+				employer: "Bridgewoods | 2022 - current"
 			}
 		],
 		technologies: [
@@ -180,4 +93,50 @@ const content = {
 	}
 };
 
-export default content
+export default content;
+
+export interface ContentProps {
+	footer: Footer;
+	about: About;
+}
+
+export interface About {
+	headline: string;
+	version: string;
+	releaseNotes: ReleaseNote[];
+	title: string;
+	name: string;
+	location: string;
+	occupation: string;
+	bio: string;
+	links: Link[];
+	professionalExperience: ProfessionalExperience[];
+	technologies: string[];
+}
+
+export interface Link {
+	text: string;
+	href: string;
+}
+
+export interface ProfessionalExperience {
+	position: string;
+	employer: string;
+}
+
+export interface ReleaseNote {
+	version: string;
+	description: string;
+}
+
+export interface Footer {
+	logoFilePath: string;
+	logoAltText: string;
+	logoText: string;
+	externalLinks: ExternalLink[];
+}
+
+export interface ExternalLink {
+	linkedin: string;
+	github: string;
+}

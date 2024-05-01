@@ -30,8 +30,8 @@ const AboutMe = () => {
 					<div className="card-container">
 						{professionalExperience.map((experience, index) => (
 							<div className="professional-experience-card" key={index}>
-								<h3>{experience.position.content}</h3>
-								<p>{experience.employer.content}</p>
+								<h3>{experience.position}</h3>
+								<p>{experience.employer}</p>
 							</div>
 						))}
 					</div>

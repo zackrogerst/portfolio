@@ -8,7 +8,7 @@ const ForwardArrowIcon: FC<ForwardArrowIconProps> = ({ iconColor }) => {
 	return (
 		<svg
 			cursor={"pointer"}
-			width="25"
+			width="15"
 			height="15"
 			viewBox="0 0 9 15"
 			fill="none"

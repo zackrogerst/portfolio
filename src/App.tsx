@@ -1,31 +1,35 @@
-import "./app.css";
-import AboutMe from "./Components/Content/AboutMe/AboutMe.tsx";
+import { createContext, useState } from "react";
 
+import "./app.css";
+
+import AboutMe from "./Components/Content/AboutMe/AboutMe.tsx";
 import Footer from "./Components/Footer/Footer";
 import Window from "./Components/Window/Window";
 
-function App() {
-	return (
-		<>
-			<main
-				style={{
-					height: "100vh",
-					position: "relative",
-					display: "flex",
-					justifyContent: "center",
-					alignItems: "center",
-					overflow: "hidden"
-				}}
-			>
-				{/* Desktop Icons */}
-				{/* Desktop Icons */}
+const WindowContext = createContext([""]);
 
-				<Window closeIcons={false} headerText="Welcome To Zack Os" zIndex={1}>
-					<AboutMe />
-				</Window>
-			</main>
-			<Footer />
-		</>
+function App() {
+	const [windows, setWindows] = useState(["Welcome To Zack OS"]);
+	return (
+		<WindowContext.Provider value={windows}>
+			<>
+				<main>
+					{/* Desktop Icons */}
+					{windows.map((windowNameStr, index) => (
+						<Window
+							setWindows={setWindows}
+							key={windowNameStr}
+							closeIcons={true}
+							headerText={windowNameStr}
+							zIndex={index}
+						>
+							{windowNameStr === "Welcome To Zack OS" && <AboutMe />}
+						</Window>
+					))}
+				</main>
+				<Footer />
+			</>
+		</WindowContext.Provider>
 	);
 }
 
