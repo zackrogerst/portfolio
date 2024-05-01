@@ -23,7 +23,6 @@ const WindowHeader: React.FC<WindowHeaderProps> = ({ setWindows, closeIcons, hea
 		border: "none"
 	};
 	const handleCloseButtonClick = (headerText: string) => {
-		console.log("clicked close");
 		setWindows((prevWindows) => {
 			const updatedWindows = [...prevWindows];
 			const index = updatedWindows.indexOf(headerText);
